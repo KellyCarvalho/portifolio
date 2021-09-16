@@ -1,0 +1,49 @@
+
+.card{
+    padding: 20px;
+    left: 20px;
+    text-align: center;
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+    border: 2px;
+    color: rgb(49, 22, 104);
+    border-color: rgb(223, 208, 252);
+    border-style: dotted;
+    position: relative;
+    float: left;
+    border-radius: 20px;
+}
+
+.container{
+    padding: 40px;
+    float: right;
+  
+}
+
+.card:hover{
+    border: 2px;
+    color: rgb(179, 127, 59);
+    border-color: rgb(179, 127, 59);
+    border-style: dotted;
+    transform: rotateY(360deg);
+
+}
+
+button{
+    background-color: rgb(20, 26, 20); 
+    border-radius: 20px;
+    padding: 5px;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    color: rgb(235, 231, 243);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    float: left;
+    margin-left: 30%;
+    margin-right: 35%;
+    margin-top: 20px;
+    
+
+}
+

@@ -1,0 +1,59 @@
+
+
+<div class="container"  >
+
+
+    <div class="card">
+    <span *ngIf="mostrarFrontend===false"> 
+      <h3> Back-End</h3>
+     
+  
+
+      <button class="barrinha" (click)="clicked=true; clicked1=false; clicked2=false ;clicked3=false; verificarClicksBackend()" >Java</button>
+      <button class="barrinha" (click)="clicked1=true;clicked=false; clicked2=false ;clicked3=false;verificarClicksBackend() " >Spring Framework</button>
+      <button class="barrinha" (click)="clicked2=true; clicked=false; clicked1=false ;clicked3=false;verificarClicksBackend()" >Mysql</button>
+      <button class="barrinha" (click)="clicked3=true; clicked=false; clicked1=false ;clicked2=false;verificarClicksBackend()" >TDD | JUnit</button>
+
+    
+  
+     
+  
+ </span>
+ <span *ngIf="clicked&&mostrarFrontend===true"> HTML </span> 
+ <span *ngIf="clicked1&&mostrarFrontend===true"> CSS</span> 
+ <span *ngIf="clicked2&&mostrarFrontend===true"> Angular </span> 
+
+
+ <button *ngIf="mostrarFrontend;" (click)="esconderFrontend()">Voltar</button>
+    </div>
+
+  
+
+
+    <div class="card">
+    <span *ngIf="mostrarBackend===false"> 
+      <h3> Front-End</h3>
+      <button class="barrinha" (click)="clicked=true; clicked1=false; clicked2=false ;clicked3=false; verificarClicksFrontend()" >HTML</button>
+      <button class="barrinha" (click)="clicked1=true;clicked=false; clicked2=false ;clicked3=false;verificarClicksFrontend() " >CSS</button>
+      <button class="barrinha" (click)="clicked2=true; clicked=false; clicked1=false ;clicked3=false;verificarClicksFrontend()" >Angular</button>
+
+    
+  
+ </span>
+
+ <span *ngIf="clicked&&mostrarBackend===true"> Orientação a objetos | Coleções | Conexão ao Banco de Dados </span> 
+ <span *ngIf="clicked1&&mostrarBackend===true"> C# </span> 
+ <span *ngIf="clicked2&&mostrarBackend===true"> Pascal </span> 
+ <span *ngIf="clicked3&&mostrarBackend===true"> Javascript </span> 
+
+
+ <button *ngIf="mostrarBackend;" (click)="esconderBackend()">Voltar</button>
+    </div>
+
+  </div>
+
+  
+  
+   
+    
+  
