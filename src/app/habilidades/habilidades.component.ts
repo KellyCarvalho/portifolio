@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { HabilidadesService } from '../habilidades.service';
+
 
 @Component({
   selector: 'app-habilidades',
@@ -7,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HabilidadesComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+   
+  ) { }
+tecnologiaNome1="Java";
+tecnologiaDescricao1="Java é legal";
+@Input() item ='';
+@Input() item2 ='Java2';
 
   ngOnInit(): void {
   }

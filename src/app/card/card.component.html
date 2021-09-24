@@ -1,18 +1,17 @@
 
 
-<div class="container"  >
+<div class="container">
 
-
+  
     <div class="card">
     <span *ngIf="mostrarFrontend===false"> 
       <h3> Back-End</h3>
      
-  
 
-      <button class="barrinha" (click)="clicked=true; clicked1=false; clicked2=false ;clicked3=false; verificarClicksBackend()" >Java</button>
-      <button class="barrinha" (click)="clicked1=true;clicked=false; clicked2=false ;clicked3=false;verificarClicksBackend() " >Spring Framework</button>
+      <button class="barrinha" (click)="clicked=true; clicked1=false; clicked2=false ;clicked3=false; verificarClicksBackend()" >{{Java}}</button>
+      <button class="barrinha" (click)="clicked1=true;clicked=false; clicked2=false ;clicked3=false;verificarClicksBackend() " >Spring Boot</button>
       <button class="barrinha" (click)="clicked2=true; clicked=false; clicked1=false ;clicked3=false;verificarClicksBackend()" >Mysql</button>
-      <button class="barrinha" (click)="clicked3=true; clicked=false; clicked1=false ;clicked2=false;verificarClicksBackend()" >TDD | JUnit</button>
+      <button class="barrinha" (click)="clicked3=true; clicked=false; clicked1=false ;clicked2=false;verificarClicksBackend()" >Testes</button>
 
     
   
@@ -35,16 +34,49 @@
       <h3> Front-End</h3>
       <button class="barrinha" (click)="clicked=true; clicked1=false; clicked2=false ;clicked3=false; verificarClicksFrontend()" >HTML</button>
       <button class="barrinha" (click)="clicked1=true;clicked=false; clicked2=false ;clicked3=false;verificarClicksFrontend() " >CSS</button>
-      <button class="barrinha" (click)="clicked2=true; clicked=false; clicked1=false ;clicked3=false;verificarClicksFrontend()" >Angular</button>
+      <button  class="barrinha" (click)="clicked2=true; clicked=false; clicked1=false ;clicked3=false;verificarClicksFrontend()" >Angular</button>
 
-    
+      
   
  </span>
 
- <span *ngIf="clicked&&mostrarBackend===true"> Orientação a objetos | Coleções | Conexão ao Banco de Dados </span> 
- <span *ngIf="clicked1&&mostrarBackend===true"> C# </span> 
- <span *ngIf="clicked2&&mostrarBackend===true"> Pascal </span> 
- <span *ngIf="clicked3&&mostrarBackend===true"> Javascript </span> 
+ <span *ngIf="clicked&&mostrarBackend===true">
+   <h4>Java</h4>
+  Consigo implementar a lógica e criar aplicações usando o paradigma orientado a objetos e conexão com o banco de dados </span> 
+ <span *ngIf="clicked1&&mostrarBackend===true"> 
+   
+  <h4>Spring Framework</h4>
+  Em processo contínuo de aprendizado, já consigo implementar aplicações Rest com persistência de dados
+  
+  
+  <br>
+  <a href="https://github.com/KellyCarvalho/crudclientes">CRUD</a>
+  <hr>
+
+  <br>
+<a href="https://github.com/KellyCarvalho/wsCatalog">Católogo Produtos</a>  
+<hr>
+
+ </span> 
+ <span *ngIf="clicked2&&mostrarBackend===true"> 
+   
+<h4>Mysql</h4>
+
+Data Definition Language (Linguagem de Definição de Dados),  DDL;
+<br>
+Data Manipulation Language (Linguagem de Manipulação de Dados), DML;
+<br>
+Data Query Language (Linguagem de Consulta de Dados),  DQL;
+
+</span> 
+ <span *ngIf="clicked3&&mostrarBackend===true"> 
+
+  <h4>Testes</h4>
+  TDD | JUnit
+ 
+  <br>
+  Testes de integração e Testes de Unidade
+ </span> 
 
 
  <button *ngIf="mostrarBackend;" (click)="esconderBackend()">Voltar</button>

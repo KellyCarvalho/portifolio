@@ -31,19 +31,29 @@
 }
 
 button{
-    background-color: rgb(20, 26, 20); 
+    background-color: rgb(28, 25, 41); 
     border-radius: 20px;
     padding: 5px;
     height: 35px;
     width: 150px;
     text-align: center;
-    color: rgb(235, 231, 243);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(243, 238, 232);
     float: left;
     margin-left: 30%;
     margin-right: 35%;
     margin-top: 20px;
     
+    
 
 }
+a{
+    text-decoration: none;
+    color: chocolate;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a:hover{
 
+}
+hr{
+    margin: 1px;
+}

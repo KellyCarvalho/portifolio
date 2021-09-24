@@ -1,6 +1,7 @@
-import { Component, Output } from '@angular/core';
+import { Component, Output, Input} from '@angular/core';
+import { HabilidadesComponent} from '../habilidades/habilidades.component';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
+import { from, Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import * as EventEmitter from 'events';
 
@@ -17,6 +18,7 @@ export class MainNavComponent {
       shareReplay()
     );
     @Output() click = new EventEmitter();
+  
 
     itemAtual='Kelly Do Nascimento Carvalho';
  

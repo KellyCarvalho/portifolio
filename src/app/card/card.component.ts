@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -13,6 +13,9 @@ clicked2=false;
 clicked3=false;
 mostrarBackend=false;
 mostrarFrontend=false;
+Java ="Java";
+
+
   constructor() { }
 
   ngOnInit(): void {
